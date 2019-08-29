@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MOOP APP | AAI</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="py-5 text-center">
+        <h2>MOOP Software</h2>
+        <p class="lead">Critical Elements of Opertional Area</p>
+      </div>
+    </header>
+
+    <main>
+        <section id="sop">
+            <div class="container">
+                <div class="accordion" id="accordionExample">
+
+                    <!-- Card #1 -->
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button
+                                    class="btn btn-light btn-block btn-lg"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne"
+                                >
+                                    Vegetation control/grass cutting in airside
+                                </button>
+                            </h2>
+                        </div> <!-- #headingOne -->
+
+                        <div
+                            id="collapseOne"
+                            class="collapse show"
+                            aria-labelledby="headingOne"
+                            data-parent="#accordionExample"
+                        >
+                            <div class="card-body">
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">Effective Date</th>
+                                            <th scope="col">Revised on</th>
+                                            <th scope="col">Critical Elements</th>
+                                            <th scope="col">Findings/status</th>
+                                            <th scope="col">Remarks</th>
+                                            </tr>
+                                        </thead> 
+                                        <tbody>
+                                            <tr>
+                                                <td><input data-provide="datepicker"></td>
+                                                <td><input data-provide="datepicker"></td>
+                                                <td>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Grass with basic strip</option>
+                                                        <option value="2">Near boundary wall & Fencing</option>
+                                                        <option value="3">Grass in critical areas</option>
+                                                        <option value="4">Any Other</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Okay</option>
+                                                        <option value="2">Not Okay</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <textarea
+                                                        name="comment"
+                                                        id="comment"
+                                                        cols="20"
+                                                        rows="1"
+                                                        maxlength="20"
+                                                        placeholder="Comments.."
+                                                    ></textarea>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- ./table-responsive -->
+
+                            </div> <!-- ./card-body -->
+                        </div>
+                    </div> 
+
+                    <!-- Card #2 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button
+                                    class="btn btn-light btn-block btn-lg"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#collapseTwo"
+                                    aria-expanded="true"
+                                    aria-controls="collapseTwo"
+                                >
+                                    Airfield Inspection
+                                </button>
+                            </h2>
+                        </div> <!-- #headingTwo -->
+
+                        <div
+                            id="collapseTwo"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-parent="#accordionExample"
+                        >
+                            <div class="card-body">
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">Effective Date</th>
+                                            <th scope="col">Revised on</th>
+                                            <th scope="col">Critical Elements</th>
+                                            <th scope="col">Findings/status</th>
+                                            <th scope="col">Remarks</th>
+                                            </tr>
+                                        </thead> 
+                                        <tbody>
+                                            <tr>
+                                                <td><input data-provide="datepicker"></td>
+                                                <td><input data-provide="datepicker"></td>
+                                                <td>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Runway Markings</option>
+                                                        <option value="2">Joints and Cracks</option>
+                                                        <option value="3">Runway lights</option>
+                                                        <option value="4">Approach lights</option>
+                                                        <option value="5">Flood lights</option>
+                                                        <option value="6">Taxiway lights</option>
+                                                        <option value="7">Gp area</option>
+                                                        <option value="8">Localizer area</option>
+                                                        <option value="9">Taxiway markings</option>
+                                                        <option value="10">Signages</option>
+                                                        <option value="11">LDI</option>
+                                                        <option value="12">WDI</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Okay</option>
+                                                        <option value="2">Not Okay</option>
+                                                        <option value="3">Repaired</option>
+                                                        <option value="3">Not Repaired</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <textarea
+                                                        name="comment"
+                                                        id="comment"
+                                                        cols="20"
+                                                        rows="1"
+                                                        maxlength="20"
+                                                        placeholder="Comments.."
+                                                    ></textarea>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- ./table-responsive -->
+
+                            </div> <!-- ./card-body -->
+                        </div>
+                    </div> 
+
+                    <!-- Card #3 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button
+                                    class="btn btn-light btn-block btn-lg"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#collapseThree"
+                                    aria-expanded="true"
+                                    aria-controls="collapseThree"
+                                >
+                                    Bird & Wild life Control
+                                </button>
+                            </h2>
+                        </div> <!-- #headingThree -->
+
+                        <div
+                            id="collapseThree"
+                            class="collapse"
+                            aria-labelledby="headingThree"
+                            data-parent="#accordionExample"
+                        >
+                            <div class="card-body">
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">Effective Date</th>
+                                            <th scope="col">Revised on</th>
+                                            <th scope="col">Critical Elements</th>
+                                            <th scope="col">Findings/status</th>
+                                            <th scope="col">Remarks</th>
+                                            </tr>
+                                        </thead> 
+                                        <tbody>
+                                            <tr>
+                                                <td><input data-provide="datepicker"></td>
+                                                <td><input data-provide="datepicker"></td>
+                                                <td>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Use of crackers</option>
+                                                        <option value="2">Use of Zone Guns</option>
+                                                        <option value="3">Bird Chasers</option>
+                                                        <option value="4">Any Others</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Yes</option>
+                                                        <option value="2">No</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <textarea
+                                                        name="comment"
+                                                        id="comment"
+                                                        cols="20"
+                                                        rows="1"
+                                                        maxlength="20"
+                                                        placeholder="Comments.."
+                                                    ></textarea>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- ./table-responsive -->
+
+                            </div> <!-- ./card-body -->
+                        </div>
+                    </div> 
+
+                    <!-- Card #4 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button
+                                    class="btn btn-light btn-block btn-lg"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#collapseFour"
+                                    aria-expanded="true"
+                                    aria-controls="collapseFour"
+                                >
+                                    Fuel & Hydraulic Oil Spillage
+                                </button>
+                            </h2>
+                        </div> <!-- #headingFour -->
+
+                        <div
+                            id="collapseFour"
+                            class="collapse"
+                            aria-labelledby="headingFour"
+                            data-parent="#accordionExample"
+                        >
+                            <div class="card-body">
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">Effective Date</th>
+                                            <th scope="col">Revised on</th>
+                                            <th scope="col">Critical Elements</th>
+                                            <th scope="col">Findings/status</th>
+                                            <th scope="col">Remarks</th>
+                                            </tr>
+                                        </thead> 
+                                        <tbody>
+                                            <tr>
+                                                <td><input data-provide="datepicker"></td>
+                                                <td><input data-provide="datepicker"></td>
+                                                <td>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Fuel Spillage more than 3sqm</option>
+                                                        <option value="2">Fuel spillage less than 3sqm</option>
+                                                        <option value="3">Any other Occurrences</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Yes</option>
+                                                        <option value="2">No</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <textarea
+                                                        name="comment"
+                                                        id="comment"
+                                                        cols="20"
+                                                        rows="1"
+                                                        maxlength="20"
+                                                        placeholder="Comments.."
+                                                    ></textarea>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- ./table-responsive -->
+
+                            </div> <!-- ./card-body -->
+                        </div>
+                    </div> 
+
+                    <!-- Card #5 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button
+                                    class="btn btn-light btn-block btn-lg"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#collapseFive"
+                                    aria-expanded="true"
+                                    aria-controls="collapseFive"
+                                >
+                                    Incident/Accident Reporting in Airside
+                                </button>
+                            </h2>
+                        </div> <!-- #headingFive -->
+
+                        <div
+                            id="collapseFive"
+                            class="collapse"
+                            aria-labelledby="headingFive"
+                            data-parent="#accordionExample"
+                        >
+                            <div class="card-body">
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">Effective Date</th>
+                                            <th scope="col">Revised on</th>
+                                            <th scope="col">Critical Elements</th>
+                                            <th scope="col">Findings/status</th>
+                                            <th scope="col">Remarks</th>
+                                            </tr>
+                                        </thead> 
+                                        <tbody>
+                                            <tr>
+                                                <td><input data-provide="datepicker"></td>
+                                                <td><input data-provide="datepicker"></td>
+                                                <td>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Airprox/Air miss (Weekly)</option>
+                                                        <option value="2">Runway incursion (weekly)</option>
+                                                        <option value="3">Runway excursion (weekly)</option>
+                                                        <option value="4">Accident (weekly)</option>
+                                                        <option value="5">Bird hit (weekly)</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select disabled class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Okay</option>
+                                                        <option value="2">Not Okay</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <textarea
+                                                        name="comment"
+                                                        id="comment"
+                                                        cols="20"
+                                                        rows="1"
+                                                        maxlength="20"
+                                                        placeholder="Comments.."
+                                                    ></textarea>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- ./table-responsive -->
+
+                            </div> <!-- ./card-body -->
+                        </div>
+                    </div> 
+
+                    <!-- Card #6 -->
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                                <button
+                                    class="btn btn-light btn-block btn-lg"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#collapseSix"
+                                    aria-expanded="true"
+                                    aria-controls="collapseSix"
+                                >
+                                    Friction Testing & Rubber Removal
+                                </button>
+                            </h2>
+                        </div> <!-- #headingSix -->
+
+                        <div
+                            id="collapseSix"
+                            class="collapse"
+                            aria-labelledby="headingSix"
+                            data-parent="#accordionExample"
+                        >
+                            <div class="card-body">
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">Effective Date</th>
+                                            <th scope="col">Revised on</th>
+                                            <th scope="col">Critical Elements</th>
+                                            <th scope="col">Findings/status</th>
+                                            <th scope="col">Remarks</th>
+                                            </tr>
+                                        </thead> 
+                                        <tbody>
+                                            <tr>
+                                                <td><input data-provide="datepicker"></td>
+                                                <td><input data-provide="datepicker"></td>
+                                                <td>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Surface Friction Test Vehicle</option>
+                                                        <option value="2">Minimum Friction level last reported</option>
+                                                        <option value="3">Maintenance Planning level</option>
+                                                        <option value="4">Rubber Removal Machine</option>
+                                                        <option value="5">Rubber removal last done on</option>
+                                                        <option value="6">Friction test last done on</option>
+                                                        <option value="7">Friction test due on</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Available</option>
+                                                        <option value="2">Not Available</option>
+                                                        <option value="3">Request Placed</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <textarea
+                                                        name="comment"
+                                                        id="comment"
+                                                        cols="20"
+                                                        rows="1"
+                                                        maxlength="20"
+                                                        placeholder="Comments.."
+                                                    ></textarea>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> <!-- ./table-responsive -->
+
+                            </div> <!-- ./card-body -->
+                        </div>
+                    </div> 
+
+                </div> <!-- ./accordion -->
+            </div> <!-- ./container -->
+        </section>
+    </main>
+
+    <br />
+    <hr >
+    <br>
+
+    <section id="periodicity">
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Periodicity of the meetings held</h5>
+
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Committee</th>
+                                        <th scope="col">Periodicity</th>
+                                        <th scope="col">Chair Person/Chairman</th>
+                                        <th scope="col">Due on</th>
+                                        <th scope="col">Last conducted</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Airport Advisory Committee</td>
+                                        <td>Quarterly</td>
+                                        <td>Minister Concerned</td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Runway Safety Team</td>
+                                        <td>Quarterly</td>
+                                        <td>Airport Director/OIC</td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Aerodrome Committee (AC)</td>
+                                        <td>6 Monthly</td>
+                                        <td>Dy. Commissioner</td>
+                                        <td>
+                                        <textarea
+                                            name="comment"
+                                            id="comment"
+                                            cols="20"
+                                            rows="1"
+                                            maxlength="20"
+                                            placeholder="Comments.."
+                                        ></textarea>
+                                        </td>
+                                        <td>
+                                        <textarea
+                                            name="comment"
+                                            id="comment"
+                                            cols="20"
+                                            rows="1"
+                                            maxlength="20"
+                                            placeholder="Comments.."
+                                        ></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Airport Security Committee</td>
+                                        <td >Monthly</td>
+                                        <td>Airport Director/OIC</td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Airport Coordination Committee</td>
+                                        <td>Monthly</td>
+                                        <td>Airport Director/OIC</td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>ATM-ENGG-CNS Coordination</td>
+                                        <td>Monthly</td>
+                                        <td>Airport Director/OIC</td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">7</th>
+                                        <td>Bomb Threat Assessment Committee (BTAC)</td>
+                                        <td>Quarterly</td>
+                                        <td>Airport Director/OIC</td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">8</th>
+                                        <td>Airport Environment Management Committee (AEMC)</td>
+                                        <td>Monthly</td>
+                                        <td>District Planning Officer</td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">9</th>
+                                        <td>AEP Review Committee</td>
+                                        <td>Yearly</td>
+                                        <td>Airport Director/OIC</td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                        <td>
+                                            <textarea
+                                                name="comment"
+                                                id="comment"
+                                                cols="20"
+                                                rows="1"
+                                                maxlength="20"
+                                                placeholder="Comments.."
+                                            ></textarea>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> <!-- ./table-responsive -->
+
+                    </div> <!-- ./card-body -->
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-primary mr-3">Submit</button>
+                        <button type="submit" class="btn btn-danger mr-3">PDF</button>
+                        <button type="submit" class="btn btn-success">Share</button>
+                    </div>
+                </div> <!-- ./card -->
+            </div> <!-- ./row -->
+        </div>
+    </section>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1 text-center"> Airpots Authority Of India&copy; 2019-2020 | RED Department </p>
+    </footer>
+    
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
