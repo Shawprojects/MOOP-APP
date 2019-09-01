@@ -1,510 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>MOOP APP | AAI</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>MOOP | AAI</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="py-5 text-center">
-        <h2>MOOP</h2>
-        <p class="lead">Critical Elements of Opertional Area</p>
-      </div>
-    </header>
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-    <main>
-        <section id="sop">
+    <body>
+        <!-- START NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <div class="accordion" id="accordionExample">
+                <a class="navbar-brand" href="index.html">MOOP</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Records</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ./container -->
+        </nav>
+        <!-- END NAVBAR -->
 
-                    <!-- Card #1 -->
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-light btn-block btn-lg"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseOne"
-                                    aria-expanded="true"
-                                    aria-controls="collapseOne"
-                                >
-                                    Vegetation control/grass cutting in airside
-                                </button>
-                            </h2>
-                        </div> <!-- #headingOne -->
+        <br>
 
-                        <div
-                            id="collapseOne"
-                            class="collapse show"
-                            aria-labelledby="headingOne"
-                            data-parent="#accordionExample"
-                        >
-                            <div class="card-body">
-
-                                <div class="table-responsive">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">Effective Date</th>
-                                            <th scope="col">Revised on</th>
-                                            <th scope="col">Critical Elements</th>
-                                            <th scope="col">Findings/status</th>
-                                            <th scope="col">Remarks</th>
-                                            </tr>
-                                        </thead> 
-                                        <tbody>
-                                            <tr>
-                                                <td><input data-provide="datepicker"></td>
-                                                <td><input data-provide="datepicker"></td>
-                                                <td>
-                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                        <option selected>Choose...</option>
-                                                        <option value="1">Grass with basic strip</option>
-                                                        <option value="2">Near boundary wall & Fencing</option>
-                                                        <option value="3">Grass in critical areas</option>
-                                                        <option value="4">Any Other</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                        <option selected>Choose...</option>
-                                                        <option value="1">Okay</option>
-                                                        <option value="2">Not Okay</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <textarea
-                                                        name="comment"
-                                                        id="comment"
-                                                        cols="20"
-                                                        rows="1"
-                                                        maxlength="20"
-                                                        placeholder="Comments.."
-                                                    ></textarea>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div> <!-- ./table-responsive -->
-
-                            </div> <!-- ./card-body -->
-                        </div>
-                    </div> 
-
-                    <!-- Card #2 -->
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-light btn-block btn-lg"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseTwo"
-                                    aria-expanded="true"
-                                    aria-controls="collapseTwo"
-                                >
-                                    Airfield Inspection
-                                </button>
-                            </h2>
-                        </div> <!-- #headingTwo -->
-
-                        <div
-                            id="collapseTwo"
-                            class="collapse"
-                            aria-labelledby="headingTwo"
-                            data-parent="#accordionExample"
-                        >
-                            <div class="card-body">
-
-                                <div class="table-responsive">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">Effective Date</th>
-                                            <th scope="col">Revised on</th>
-                                            <th scope="col">Critical Elements</th>
-                                            <th scope="col">Findings/status</th>
-                                            <th scope="col">Remarks</th>
-                                            </tr>
-                                        </thead> 
-                                        <tbody>
-                                            <tr>
-                                                <td><input data-provide="datepicker"></td>
-                                                <td><input data-provide="datepicker"></td>
-                                                <td>
-                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                        <option selected>Choose...</option>
-                                                        <option value="1">Runway Markings</option>
-                                                        <option value="2">Joints and Cracks</option>
-                                                        <option value="3">Runway lights</option>
-                                                        <option value="4">Approach lights</option>
-                                                        <option value="5">Flood lights</option>
-                                                        <option value="6">Taxiway lights</option>
-                                                        <option value="7">Gp area</option>
-                                                        <option value="8">Localizer area</option>
-                                                        <option value="9">Taxiway markings</option>
-                                                        <option value="10">Signages</option>
-                                                        <option value="11">LDI</option>
-                                                        <option value="12">WDI</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                        <option selected>Choose...</option>
-                                                        <option value="1">Okay</option>
-                                                        <option value="2">Not Okay</option>
-                                                        <option value="3">Repaired</option>
-                                                        <option value="3">Not Repaired</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <textarea
-                                                        name="comment"
-                                                        id="comment"
-                                                        cols="20"
-                                                        rows="1"
-                                                        maxlength="20"
-                                                        placeholder="Comments.."
-                                                    ></textarea>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div> <!-- ./table-responsive -->
-
-                            </div> <!-- ./card-body -->
-                        </div>
-                    </div> 
-
-                    <!-- Card #3 -->
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-light btn-block btn-lg"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseThree"
-                                    aria-expanded="true"
-                                    aria-controls="collapseThree"
-                                >
-                                    Bird & Wild life Control
-                                </button>
-                            </h2>
-                        </div> <!-- #headingThree -->
-
-                        <div
-                            id="collapseThree"
-                            class="collapse"
-                            aria-labelledby="headingThree"
-                            data-parent="#accordionExample"
-                        >
-                            <div class="card-body">
-
-                                <div class="table-responsive">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">Effective Date</th>
-                                            <th scope="col">Revised on</th>
-                                            <th scope="col">Critical Elements</th>
-                                            <th scope="col">Findings/status</th>
-                                            <th scope="col">Remarks</th>
-                                            </tr>
-                                        </thead> 
-                                        <tbody>
-                                            <tr>
-                                                <td><input data-provide="datepicker"></td>
-                                                <td><input data-provide="datepicker"></td>
-                                                <td>
-                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                        <option selected>Choose...</option>
-                                                        <option value="1">Use of crackers</option>
-                                                        <option value="2">Use of Zone Guns</option>
-                                                        <option value="3">Bird Chasers</option>
-                                                        <option value="4">Any Others</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                        <option selected>Choose...</option>
-                                                        <option value="1">Yes</option>
-                                                        <option value="2">No</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <textarea
-                                                        name="comment"
-                                                        id="comment"
-                                                        cols="20"
-                                                        rows="1"
-                                                        maxlength="20"
-                                                        placeholder="Comments.."
-                                                    ></textarea>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div> <!-- ./table-responsive -->
-
-                            </div> <!-- ./card-body -->
-                        </div>
-                    </div> 
-
-                    <!-- Card #4 -->
-                    <div class="card">
-                        <div class="card-header" id="headingFour">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-light btn-block btn-lg"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseFour"
-                                    aria-expanded="true"
-                                    aria-controls="collapseFour"
-                                >
-                                    Fuel & Hydraulic Oil Spillage
-                                </button>
-                            </h2>
-                        </div> <!-- #headingFour -->
-
-                        <div
-                            id="collapseFour"
-                            class="collapse"
-                            aria-labelledby="headingFour"
-                            data-parent="#accordionExample"
-                        >
-                            <div class="card-body">
-
-                                <div class="table-responsive">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">Effective Date</th>
-                                            <th scope="col">Revised on</th>
-                                            <th scope="col">Critical Elements</th>
-                                            <th scope="col">Findings/status</th>
-                                            <th scope="col">Remarks</th>
-                                            </tr>
-                                        </thead> 
-                                        <tbody>
-                                            <tr>
-                                                <td><input data-provide="datepicker"></td>
-                                                <td><input data-provide="datepicker"></td>
-                                                <td>
-                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                        <option selected>Choose...</option>
-                                                        <option value="1">Fuel Spillage more than 3sqm</option>
-                                                        <option value="2">Fuel spillage less than 3sqm</option>
-                                                        <option value="3">Any other Occurrences</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                        <option selected>Choose...</option>
-                                                        <option value="1">Yes</option>
-                                                        <option value="2">No</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <textarea
-                                                        name="comment"
-                                                        id="comment"
-                                                        cols="20"
-                                                        rows="1"
-                                                        maxlength="20"
-                                                        placeholder="Comments.."
-                                                    ></textarea>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div> <!-- ./table-responsive -->
-
-                            </div> <!-- ./card-body -->
-                        </div>
-                    </div> 
-
-                    <!-- Card #5 -->
-                    <div class="card">
-                        <div class="card-header" id="headingFive">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-light btn-block btn-lg"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseFive"
-                                    aria-expanded="true"
-                                    aria-controls="collapseFive"
-                                >
-                                    Incident/Accident Reporting in Airside
-                                </button>
-                            </h2>
-                        </div> <!-- #headingFive -->
-
-                        <div
-                            id="collapseFive"
-                            class="collapse"
-                            aria-labelledby="headingFive"
-                            data-parent="#accordionExample"
-                        >
-                            <div class="card-body">
-
-                                <div class="table-responsive">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">Effective Date</th>
-                                            <th scope="col">Revised on</th>
-                                            <th scope="col">Critical Elements</th>
-                                            <th scope="col">Findings/status</th>
-                                            <th scope="col">Remarks</th>
-                                            </tr>
-                                        </thead> 
-                                        <tbody>
-                                            <tr>
-                                                <td><input data-provide="datepicker"></td>
-                                                <td><input data-provide="datepicker"></td>
-                                                <td>
-                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                        <option selected>Choose...</option>
-                                                        <option value="1">Airprox/Air miss (Weekly)</option>
-                                                        <option value="2">Runway incursion (weekly)</option>
-                                                        <option value="3">Runway excursion (weekly)</option>
-                                                        <option value="4">Accident (weekly)</option>
-                                                        <option value="5">Bird hit (weekly)</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <select disabled class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                        <option selected>Choose...</option>
-                                                        <option value="1">Okay</option>
-                                                        <option value="2">Not Okay</option>
-                                                        <option value="3">Three</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <textarea
-                                                        name="comment"
-                                                        id="comment"
-                                                        cols="20"
-                                                        rows="1"
-                                                        maxlength="20"
-                                                        placeholder="Comments.."
-                                                    ></textarea>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div> <!-- ./table-responsive -->
-
-                            </div> <!-- ./card-body -->
-                        </div>
-                    </div> 
-
-                    <!-- Card #6 -->
-                    <div class="card">
-                        <div class="card-header" id="headingSix">
-                            <h2 class="mb-0">
-                                <button
-                                    class="btn btn-light btn-block btn-lg"
-                                    type="button"
-                                    data-toggle="collapse"
-                                    data-target="#collapseSix"
-                                    aria-expanded="true"
-                                    aria-controls="collapseSix"
-                                >
-                                    Friction Testing & Rubber Removal
-                                </button>
-                            </h2>
-                        </div> <!-- #headingSix -->
-
-                        <div
-                            id="collapseSix"
-                            class="collapse"
-                            aria-labelledby="headingSix"
-                            data-parent="#accordionExample"
-                        >
-                            <div class="card-body">
-
-                                <div class="table-responsive">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">Effective Date</th>
-                                            <th scope="col">Revised on</th>
-                                            <th scope="col">Critical Elements</th>
-                                            <th scope="col">Findings/status</th>
-                                            <th scope="col">Remarks</th>
-                                            </tr>
-                                        </thead> 
-                                        <tbody>
-                                            <tr>
-                                                <td><input data-provide="datepicker"></td>
-                                                <td><input data-provide="datepicker"></td>
-                                                <td>
-                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                        <option selected>Choose...</option>
-                                                        <option value="1">Surface Friction Test Vehicle</option>
-                                                        <option value="2">Minimum Friction level last reported</option>
-                                                        <option value="3">Maintenance Planning level</option>
-                                                        <option value="4">Rubber Removal Machine</option>
-                                                        <option value="5">Rubber removal last done on</option>
-                                                        <option value="6">Friction test last done on</option>
-                                                        <option value="7">Friction test due on</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                        <option selected>Choose...</option>
-                                                        <option value="1">Available</option>
-                                                        <option value="2">Not Available</option>
-                                                        <option value="3">Request Placed</option>
-                                                    </select>
-                                                </td>
-                                                <td>
-                                                    <textarea
-                                                        name="comment"
-                                                        id="comment"
-                                                        cols="20"
-                                                        rows="1"
-                                                        maxlength="20"
-                                                        placeholder="Comments.."
-                                                    ></textarea>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div> <!-- ./table-responsive -->
-
-                            </div> <!-- ./card-body -->
-                        </div>
-                    </div> 
-
-                </div> <!-- ./accordion -->
-            </div> <!-- ./container -->
-        </section>
-    </main>
-
-    <br />
-    <hr >
-    <br>
-
-    <section id="periodicity">
-        <div class="container">
-            <div class="row">
+        <!-- Operation Section -->
+        <section id="main-content">
+            <div class="container">
                 <div class="card">
+                    <div class="card-header text-muted text-center">
+                        Critical Elements of Opertional Area
+                    </div>
                     <div class="card-body">
-                        <h5 class="card-title text-center">Periodicity of the meetings held</h5>
+
+                        <form action="">
+                        <!-- SECTION A -->
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 bg-secondary">
+                                <div class="nav flex-column nav-pills p-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <a class="nav-link text-white active" id="v-pills-a-tab" data-toggle="pill" href="#v-pills-a" role="tab" aria-controls="v-pills-a" aria-selected="true">
+                                        Vegetation Control/Grass Cutting In Airside
+                                    </a>
+
+                                    <a class="nav-link text-white" id="v-pills-b-tab" data-toggle="pill" href="#v-pills-b" role="tab" aria-controls="v-pills-b" aria-selected="false">
+                                        Airfield Inspection
+                                    </a>
+
+                                    <a class="nav-link text-white" id="v-pills-c-tab" data-toggle="pill" href="#v-pills-c" role="tab" aria-controls="v-pills-c" aria-selected="false">
+                                        Bird & Wild Life Control
+                                    </a>
+
+                                    <a class="nav-link text-white" id="v-pills-d-tab" data-toggle="pill" href="#v-pills-d" role="tab" aria-controls="v-pills-d" aria-selected="false">
+                                        Fuel & Hydraulic Oil Spillage
+                                    </a>
+
+                                    <a class="nav-link text-white" id="v-pills-e-tab" data-toggle="pill" href="#v-pills-e" role="tab" aria-controls="v-pills-e" aria-selected="false">
+                                        Incident/Accident Reporting In Airside
+                                    </a>
+
+                                    <a class="nav-link text-white" id="v-pills-f-tab" data-toggle="pill" href="#v-pills-f" role="tab" aria-controls="v-pills-f" aria-selected="false">
+                                        Friction Testing & Rubber Removal
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-6 bg-light">
+                                <div class="tab-content p-3" id="v-pills-tabContent">
+
+                                    <div class="tab-pane fade show active" id="v-pills-a" role="tabpanel" aria-labelledby="v-pills-a-tab">
+                                        <!-- START Content A -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="effective_date1">Effective Date</label>
+                                                            <input type="date" name="datepicker1" max="3000-12-31" min="1000-01-01" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="revised_on1">Revised on</label>
+                                                            <input type="date" name="datepicker2" max="3000-12-31" min="1000-01-01" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="critical_elements1">Critical Elements</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">Grass with basic strip</option>
+                                                                <option value="2">Near boundary wall & Fencing</option>
+                                                                <option value="3">Grass in critical areas</option>
+                                                                <option value="4">Any Other</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- ./ col-lg-12 -->
+
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="status1">Findings/status</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">Okay</option>
+                                                                <option value="2">Not Okay</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="remarks1">Remarks</label>
+                                                            <textarea
+                                                                class="form-control"
+                                                                name="comment"
+                                                                id="comment"
+                                                                cols="20"
+                                                                rows="1"
+                                                                maxlength="20"
+                                                                placeholder="Comments.."
+                                                            ></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4"></div>
+                                                </div>
+                                            </div> <!-- ./ col-lg-12 -->
+                                        </div> <!-- ./row -->
+                                        <!-- END Content A -->
+                                    </div>
+
+                                    <div class="tab-pane fade" id="v-pills-b" role="tabpanel" aria-labelledby="v-pills-b-tab">
+                                       <!-- START Content B -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="effective_date2">Effective Date</label>
+                                                            <input type="date" name="datepicker3" max="3000-12-31" min="1000-01-01" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="revised_on2">Revised on</label>
+                                                            <input type="date" name="datepicker4" max="3000-12-31" min="1000-01-01" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="critical_elements2">Critical Elements</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">Runway Markings</option>
+                                                                <option value="2">Joints and Cracks</option>
+                                                                <option value="3">Runway lights</option>
+                                                                <option value="4">Approach lights</option>
+                                                                <option value="5">Flood lights</option>
+                                                                <option value="6">Taxiway lights</option>
+                                                                <option value="7">Gp area</option>
+                                                                <option value="8">Localizer area</option>
+                                                                <option value="9">Taxiway markings</option>
+                                                                <option value="10">Signages</option>
+                                                                <option value="11">LDI</option>
+                                                                <option value="12">WDI</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- ./ col-lg-12 -->
+
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="status2">Findings/status</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">Okay</option>
+                                                                <option value="2">Not Okay</option>
+                                                                <option value="3">Repaired</option>
+                                                                <option value="3">Not Repaired</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="remarks2">Remarks</label>
+                                                            <textarea
+                                                                class="form-control"
+                                                                name="comment2"
+                                                                id="comment"
+                                                                cols="20"
+                                                                rows="1"
+                                                                maxlength="20"
+                                                                placeholder="Comments.."
+                                                            ></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4"></div>
+                                                </div>
+                                            </div> <!-- ./ col-lg-12 -->
+                                        </div> <!-- ./row -->
+                                        <!-- END Content B -->
+                                    </div>
+
+                                    <div class="tab-pane fade" id="v-pills-c" role="tabpanel" aria-labelledby="v-pills-c-tab">
+                                        <!-- START Content C -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="effective_date3">Effective Date</label>
+                                                            <input type="date" name="datepicker5" max="3000-12-31" min="1000-01-01" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="revised_on3">Revised on</label>
+                                                            <input type="date" name="datepicker6" max="3000-12-31" min="1000-01-01" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="critical_elements3">Critical Elements</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">Use of crackers</option>
+                                                                <option value="2">Use of Zone Guns</option>
+                                                                <option value="3">Bird Chasers</option>
+                                                                <option value="4">Any Others</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- ./ col-lg-12 -->
+
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="status3">Findings/status</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">Yes</option>
+                                                                <option value="2">No</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="remarks3">Remarks</label>
+                                                            <textarea
+                                                                class="form-control"
+                                                                name="comment3"
+                                                                id="comment"
+                                                                cols="20"
+                                                                rows="1"
+                                                                maxlength="20"
+                                                                placeholder="Comments.."
+                                                            ></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4"></div>
+                                                </div>
+                                            </div> <!-- ./ col-lg-12 -->
+                                        </div> <!-- ./row -->
+                                        <!-- END Content C -->
+                                    </div>
+
+                                    <div class="tab-pane fade" id="v-pills-d" role="tabpanel" aria-labelledby="v-pills-d-tab">
+                                        <!-- START Content D -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="effective_date4">Effective Date</label>
+                                                            <input type="date" name="datepicker7" max="3000-12-31" min="1000-01-01" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="revised_on4">Revised on</label>
+                                                            <input type="date" name="datepicker8" max="3000-12-31" min="1000-01-01" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="critical_elements4">Critical Elements</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">Fuel Spillage more than 3sqm</option>
+                                                                <option value="2">Fuel spillage less than 3sqm</option>
+                                                                <option value="3">Any other Occurrences</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- ./ col-lg-12 -->
+
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="status4">Findings/status</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">Yes</option>
+                                                                <option value="2">No</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="remarks4">Remarks</label>
+                                                            <textarea
+                                                                class="form-control"
+                                                                name="comment4"
+                                                                id="comment"
+                                                                cols="20"
+                                                                rows="1"
+                                                                maxlength="20"
+                                                                placeholder="Comments.."
+                                                            ></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4"></div>
+                                                </div>
+                                            </div> <!-- ./ col-lg-12 -->
+                                        </div> <!-- ./row -->
+                                        <!-- END Content D -->
+                                    </div>
+
+                                    <div class="tab-pane fade" id="v-pills-e" role="tabpanel" aria-labelledby="v-pills-e-tab">
+                                        <!-- START Content E -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="effective_date5">Effective Date</label>
+                                                            <input type="date" name="datepicker9" max="3000-12-31" min="1000-01-01" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="revised_on5">Revised on</label>
+                                                            <input type="date" name="datepicker10" max="3000-12-31" min="1000-01-01" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="critical_elements5">Critical Elements</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">Airprox/Air miss (Weekly)</option>
+                                                                <option value="2">Runway incursion (weekly)</option>
+                                                                <option value="3">Runway excursion (weekly)</option>
+                                                                <option value="4">Accident (weekly)</option>
+                                                                <option value="5">Bird hit (weekly)</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- ./ col-lg-12 -->
+
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="status5">Findings/status</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">Okay</option>
+                                                                <option value="2">Not Okay</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="remarks5">Remarks</label>
+                                                            <textarea
+                                                                class="form-control"
+                                                                name="comment5"
+                                                                id="comment"
+                                                                cols="20"
+                                                                rows="1"
+                                                                maxlength="20"
+                                                                placeholder="Comments.."
+                                                            ></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4"></div>
+                                                </div>
+                                            </div> <!-- ./ col-lg-12 -->
+                                        </div> <!-- ./row -->
+                                        <!-- END Content E -->
+                                    </div>
+
+                                    <div class="tab-pane fade" id="v-pills-f" role="tabpanel" aria-labelledby="v-pills-f-tab">
+                                        <!-- START Content F -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="effective_date6">Effective Date</label>
+                                                            <input type="date" name="datepicker11" max="3000-12-31" min="1000-01-01" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="revised_on6">Revised on</label>
+                                                            <input type="date" name="datepicker12" max="3000-12-31" min="1000-01-01" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="critical_elements6">Critical Elements</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">Surface Friction Test Vehicle</option>
+                                                                <option value="2">Minimum Friction level last reported</option>
+                                                                <option value="3">Maintenance Planning level</option>
+                                                                <option value="4">Rubber Removal Machine</option>
+                                                                <option value="5">Rubber removal last done on</option>
+                                                                <option value="6">Friction test last done on</option>
+                                                                <option value="7">Friction test due on</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- ./ col-lg-12 -->
+
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="status6">Findings/status</label>
+                                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                                                <option selected>Choose...</option>
+                                                                <option value="1">Available</option>
+                                                                <option value="2">Not Available</option>
+                                                                <option value="3">Request Placed</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4">
+                                                        <div class="form-group">
+                                                            <label for="remarks6">Remarks</label>
+                                                            <textarea
+                                                                class="form-control"
+                                                                name="comment6"
+                                                                id="comment"
+                                                                cols="20"
+                                                                rows="1"
+                                                                maxlength="20"
+                                                                placeholder="Comments.."
+                                                            ></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-4"></div>
+                                                </div>
+                                            </div> <!-- ./ col-lg-12 -->
+                                        </div> <!-- ./row -->
+                                        <!-- END Content F -->
+                                    </div>
+                                </div> <!-- ./tab-content -->
+                            </div>
+                        </div> <!-- ./row -->
+                        <!-- END SECTION A -->
+
+                        <br>
+                        <hr>
+                        <br>
+
+                        <!-- SECTION B -->
+                        <h5 class="card-title text-center text-muted mb-4">Periodicity of the meetings held</h5>
 
                         <div class="table-responsive">
-                            <table class="table table-hover">
+                            <table class="table table-hover table-bordered">
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
@@ -523,7 +536,8 @@
                                         <td>Minister Concerned</td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment7"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -533,7 +547,8 @@
                                         </td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment8"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -549,7 +564,8 @@
                                         <td>Airport Director/OIC</td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment9"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -559,7 +575,8 @@
                                         </td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment10"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -575,7 +592,8 @@
                                         <td>Dy. Commissioner</td>
                                         <td>
                                         <textarea
-                                            name="comment"
+                                            class="form-control"
+                                            name="comment11"
                                             id="comment"
                                             cols="20"
                                             rows="1"
@@ -585,7 +603,8 @@
                                         </td>
                                         <td>
                                         <textarea
-                                            name="comment"
+                                            class="form-control"
+                                            name="comment12"
                                             id="comment"
                                             cols="20"
                                             rows="1"
@@ -601,7 +620,8 @@
                                         <td>Airport Director/OIC</td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment13"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -611,7 +631,8 @@
                                         </td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment14"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -627,7 +648,8 @@
                                         <td>Airport Director/OIC</td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment15"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -637,7 +659,8 @@
                                         </td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment16"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -653,7 +676,8 @@
                                         <td>Airport Director/OIC</td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment17"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -663,7 +687,8 @@
                                         </td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment18"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -679,7 +704,8 @@
                                         <td>Airport Director/OIC</td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment19"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -689,7 +715,8 @@
                                         </td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment20"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -705,7 +732,8 @@
                                         <td>District Planning Officer</td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment21"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -715,7 +743,8 @@
                                         </td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment22"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -731,7 +760,8 @@
                                         <td>Airport Director/OIC</td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment23"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -741,7 +771,8 @@
                                         </td>
                                         <td>
                                             <textarea
-                                                name="comment"
+                                                class="form-control"
+                                                name="comment24"
                                                 id="comment"
                                                 cols="20"
                                                 rows="1"
@@ -753,28 +784,41 @@
                                 </tbody>
                             </table>
                         </div> <!-- ./table-responsive -->
+                        <!-- END SECTION B -->
 
-                    </div> <!-- ./card-body -->
-                    <div class="card-footer">
-                        <button type="submit" class="btn btn-primary mr-3">Submit</button>
-                        <button type="submit" class="btn btn-danger mr-3">PDF</button>
-                        <button type="submit" class="btn btn-success">Share</button>
-                    </div>
+                        <br>
+
+                        <!-- SECTION C -->
+                            <div class="row">
+                                <div class="col-lg-4 mb-2">
+                                    <button class="btn btn-block btn-primary">Submit</button>
+                                </div>
+                                <div class="col-lg-4 mb-2">
+                                    <button class="btn btn-block btn-danger">PDF</button>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <button class="btn btn-block btn-success">Share</button>
+                                </div>
+                            </div>
+                        <!-- END SECTION C -->
                 </div> <!-- ./card -->
-            </div> <!-- ./row -->
-        </div>
-    </section>
+            </div>
+            <!-- ./container -->
+        </section>
 
-    <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1 text-center"> Airpots Authority Of India&copy; 2019-2020 | RED Department </p>
-    </footer>
-    
+        <footer id="main=footer" class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1 text-center"> Airpots Authority Of India&copy; 2019-2020 | RED Department </p>
+            <p class="mb-1 text-center"><small>Develop by - Narayan Shaw (IT Apprentice)</small></p>
+        </footer>
+        
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
 </html>
